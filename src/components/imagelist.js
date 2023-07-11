@@ -16,7 +16,6 @@ export default function Imagelist({ proops }) {
       <form onSubmit={funn}>
         <input input={term} onChange={onChangeHandler} />
       </form>
-      <div>this is image list /</div>
     </div>
   );
 }

@@ -16,7 +16,7 @@ export async function searchImages(searchTermm) {
     });
 
     // Handle the response data here
-    return response.data;
+    return response.data.results;
   } catch (error) {
     // Handle any errors here
     console.error(error);
