@@ -7,6 +7,5 @@ export default function Image({ pp }) {
   for (let i = 0; i < objectsArray.length; i++) {
     imgSrc = objectsArray[i].urls.full;
   }
-
-  return <img src={imgSrc}></img>;
+  return <img src={imgSrc} alt="photos depends on the your search"></img>;
 }
