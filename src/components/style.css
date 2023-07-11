@@ -1,0 +1,9 @@
+.image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inp {
+  margin-left: 750px;
+  margin-bottom: 50px;
+}

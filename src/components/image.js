@@ -1,11 +1,9 @@
 import React from "react";
-
+import ImageShow from "./ImageShow";
 export default function Image({ pp }) {
-  console.log(pp);
-  const objectsArray = Object.values(pp);
-  let imgSrc = "";
-  for (let i = 0; i < objectsArray.length; i++) {
-    imgSrc = objectsArray[i].urls.full;
-  }
-  return <img src={imgSrc} alt="photos depends on the your search"></img>;
+  const renderedImages = pp.map((pp) => {
+    return <ImageShow key={pp.id} pp={pp} />;
+  });
+
+  return <div className="image-list">{renderedImages}</div>;
 }

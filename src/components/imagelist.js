@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./style.css";
 export default function Imagelist({ proops }) {
   const [term, setTerm] = useState("");
 
@@ -13,7 +14,7 @@ export default function Imagelist({ proops }) {
   };
   return (
     <div>
-      <form onSubmit={funn}>
+      <form onSubmit={funn} className="inp">
         <input input={term} onChange={onChangeHandler} />
       </form>
     </div>
